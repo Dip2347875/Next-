@@ -15,36 +15,27 @@ concurrency:
 jobs:
   post:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
-
+    timeout-minutes: 50
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - name: Setup Python
-        uses: actions/setup-python@v6
+      - name: Random delay (looks natural)
+        if: github.event_name == 'schedule'
+        run: sleep $((RANDOM % 1500))
+
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
-      - name: Random skip and random delay
-        run: |
-          if [ "${{ github.event_name }}" = "schedule" ]; then
-            if [ $((RANDOM % 100)) -lt 10 ]; then
-              echo "SKIP=1" >> "$GITHUB_ENV"
-              echo "Skipping this hour"
-            else
-              sleep $((RANDOM % 1500))
-            fi
-          fi
-
-      - name: Install dependencies
-        if: env.SKIP != '1'
+      - name: Install
         run: pip install requests
 
       - name: Write and publish one post
-        if: env.SKIP != '1'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          COHERE_API_KEY: ${{ secrets.COHERE_API_KEY }}
+          LLAMA_API_KEY: ${{ secrets.LLAMA_API_KEY }}
           BLOGGER_BLOG_ID: ${{ secrets.BLOGGER_BLOG_ID }}
           GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
           GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
@@ -52,7 +43,6 @@ jobs:
         run: python auto_blogger.py
 
       - name: Save rotation state
-        if: env.SKIP != '1'
         run: |
           git config user.name "auto-blogger"
           git config user.email "auto-blogger@users.noreply.github.com"

@@ -1,5 +1,5 @@
 {
-  "next": 2,
+  "next": 3,
   "titles": {
     "Finance": [
       "How to Build a Recession-Proof Investment Portfolio with ETFs and Dividend Stocks",
@@ -8,6 +8,10 @@
     "Health": [
       "The Role of Probiotics in Gut Health and Immune Function",
       "Probiotics for Gut Health: Boosting Immunity Naturally"
+    ],
+    "News": [
+      "Understanding the Impact of Climate Change on Global Food Security and Sustainable Agriculture Practices",
+      "Climate Change Impact on Global Food Security and Agriculture"
     ]
   }
 }

@@ -16,26 +16,28 @@ jobs:
   post:
     runs-on: ubuntu-latest
     timeout-minutes: 45
+
     steps:
-      - uses: actions/setup-python@v5
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
 
       - name: Random skip and random delay
         run: |
           if [ "${{ github.event_name }}" = "schedule" ]; then
             if [ $((RANDOM % 100)) -lt 10 ]; then
-              echo "SKIP=1" >> $GITHUB_ENV
+              echo "SKIP=1" >> "$GITHUB_ENV"
               echo "Skipping this hour"
             else
               sleep $((RANDOM % 1500))
             fi
           fi
 
-      - uses: actions/setup-python@v6
-        if: env.SKIP != '1'
-        with:
-          python-version: "3.12"
-
-      - name: Install
+      - name: Install dependencies
         if: env.SKIP != '1'
         run: pip install requests
 

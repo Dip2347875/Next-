@@ -1,0 +1,58 @@
+name: Auto Blog Post
+
+on:
+  schedule:
+    - cron: "50 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: auto-post
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Random skip and random delay
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            if [ $((RANDOM % 100)) -lt 10 ]; then
+              echo "SKIP=1" >> $GITHUB_ENV
+              echo "Skipping this hour"
+            else
+              sleep $((RANDOM % 1500))
+            fi
+          fi
+
+      - uses: actions/setup-python@v5
+        if: env.SKIP != '1'
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        if: env.SKIP != '1'
+        run: pip install -r requirements.txt
+
+      - name: Write and publish one post
+        if: env.SKIP != '1'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          BLOGGER_BLOG_ID: ${{ secrets.BLOGGER_BLOG_ID }}
+          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+          GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
+        run: python auto_blogger.py
+
+      - name: Save rotation state
+        if: env.SKIP != '1'
+        run: |
+          git config user.name "auto-blogger"
+          git config user.email "auto-blogger@users.noreply.github.com"
+          git add state.json
+          git diff --cached --quiet || (git commit -m "update state" && git push)

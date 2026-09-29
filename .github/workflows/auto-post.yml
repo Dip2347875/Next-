@@ -37,7 +37,7 @@ jobs:
 
       - name: Install
         if: env.SKIP != '1'
-        run: pip install -r requirements.txt
+        run: pip install requests
 
       - name: Write and publish one post
         if: env.SKIP != '1'

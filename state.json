@@ -1,9 +1,13 @@
 {
-  "next": 1,
+  "next": 2,
   "titles": {
     "Finance": [
       "How to Build a Recession-Proof Investment Portfolio with ETFs and Dividend Stocks",
       "Build a Recession-Proof Portfolio with ETFs and Dividend Stocks"
+    ],
+    "Health": [
+      "The Role of Probiotics in Gut Health and Immune Function",
+      "Probiotics for Gut Health: Boosting Immunity Naturally"
     ]
   }
 }

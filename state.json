@@ -1,5 +1,5 @@
 {
-  "next": 4,
+  "next": 5,
   "titles": {
     "Finance": [
       "How to Build a Recession-Proof Investment Portfolio with ETFs and Dividend Stocks",
@@ -16,6 +16,10 @@
     "Education": [
       "The Impact of Microlearning on Student Engagement and Retention in Higher Education",
       "Microlearning Boosts Student Engagement and Retention"
+    ],
+    "History": [
+      "The Untold Stories of Women in the American Revolutionary War",
+      "Women in the American Revolutionary War: Untold Stories"
     ]
   }
 }

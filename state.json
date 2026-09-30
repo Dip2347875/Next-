@@ -1,5 +1,5 @@
 {
-  "next": 5,
+  "next": 6,
   "titles": {
     "Finance": [
       "How to Build a Recession-Proof Investment Portfolio with ETFs and Dividend Stocks",
@@ -20,6 +20,10 @@
     "History": [
       "The Untold Stories of Women in the American Revolutionary War",
       "Women in the American Revolutionary War: Untold Stories"
+    ],
+    "Crime": [
+      "The Evolution of Forensic Science: Solving Cold Cases with DNA Technology",
+      "Forensic Science Evolution: DNA Solves Cold Cases"
     ]
   }
 }

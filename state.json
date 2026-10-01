@@ -1,5 +1,5 @@
 {
-  "next": 10,
+  "next": 11,
   "titles": {
     "Finance": [
       "How to Build a Recession-Proof Investment Portfolio with ETFs and Dividend Stocks",
@@ -40,6 +40,10 @@
     "Question Solve": [
       "How to Effectively Manage and Reduce Chronic Stress Through Mindfulness and Lifestyle Changes",
       "Manage Chronic Stress: Mindfulness & Lifestyle Solutions"
+    ],
+    "Trending Now": [
+      "The Science Behind Lucid Dreaming: Techniques for Conscious Control in Sleep.",
+      "Lucid Dreaming Techniques: Science of Conscious Sleep Control"
     ]
   }
 }

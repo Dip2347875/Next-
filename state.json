@@ -1,5 +1,5 @@
 {
-  "next": 9,
+  "next": 10,
   "titles": {
     "Finance": [
       "How to Build a Recession-Proof Investment Portfolio with ETFs and Dividend Stocks",
@@ -36,6 +36,10 @@
     "Coding": [
       "Mastering Version Control with Git: A Comprehensive Guide for Developers",
       "Master Git Version Control: Comprehensive Guide for Developers"
+    ],
+    "Question Solve": [
+      "How to Effectively Manage and Reduce Chronic Stress Through Mindfulness and Lifestyle Changes",
+      "Manage Chronic Stress: Mindfulness & Lifestyle Solutions"
     ]
   }
 }

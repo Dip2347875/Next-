@@ -1,5 +1,5 @@
 {
-  "next": 7,
+  "next": 8,
   "titles": {
     "Finance": [
       "How to Build a Recession-Proof Investment Portfolio with ETFs and Dividend Stocks",
@@ -28,6 +28,10 @@
     "Paranormal": [
       "The Role of Electronic Voice Phenomena (EVP) in Paranormal Investigations and Ghost Communication",
       "Electronic Voice Phenomena: Unveiling Ghostly Communication"
+    ],
+    "Science Experiment": [
+      "How to Design and Conduct a Simple Science Experiment at Home to Teach Kids the Scientific Method.",
+      "Simple Science Experiment: Teaching Kids the Scientific Method"
     ]
   }
 }

@@ -1,5 +1,5 @@
 {
-  "next": 8,
+  "next": 9,
   "titles": {
     "Finance": [
       "How to Build a Recession-Proof Investment Portfolio with ETFs and Dividend Stocks",
@@ -32,6 +32,10 @@
     "Science Experiment": [
       "How to Design and Conduct a Simple Science Experiment at Home to Teach Kids the Scientific Method.",
       "Simple Science Experiment: Teaching Kids the Scientific Method"
+    ],
+    "Coding": [
+      "Mastering Version Control with Git: A Comprehensive Guide for Developers",
+      "Master Git Version Control: Comprehensive Guide for Developers"
     ]
   }
 }

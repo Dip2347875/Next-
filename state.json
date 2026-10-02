@@ -1,5 +1,5 @@
 {
-  "next": 12,
+  "next": 13,
   "titles": {
     "Finance": [
       "How to Build a Recession-Proof Investment Portfolio with ETFs and Dividend Stocks",
@@ -48,6 +48,10 @@
     "New Song": [
       "The Influence of Music Production Techniques on the Evolution of Pop Songwriting in the 21st Century",
       "Music Production Techniques Shaping 21st-Century Pop Songwriting"
+    ],
+    "Mathematics": [
+      "The Mathematics of Symmetry: Exploring Patterns in Nature and Art",
+      "Mathematics of Symmetry: Patterns in Nature and Art Explained"
     ]
   }
 }

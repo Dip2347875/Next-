@@ -1,5 +1,5 @@
 {
-  "next": 14,
+  "next": 15,
   "titles": {
     "Finance": [
       "How to Build a Recession-Proof Investment Portfolio with ETFs and Dividend Stocks",
@@ -56,6 +56,10 @@
     "Biology": [
       "The Role of Pheromones in Animal Communication and Behavior",
       "Pheromones in Animal Communication: Mechanisms and Impact"
+    ],
+    "New AI Update": [
+      "Ethical Considerations in AI-Powered Healthcare: Balancing Innovation and Patient Privacy",
+      "AI in Healthcare: Ethical Considerations for Patient Privacy"
     ]
   }
 }

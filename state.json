@@ -1,5 +1,5 @@
 {
-  "next": 17,
+  "next": 0,
   "titles": {
     "Finance": [
       "How to Build a Recession-Proof Investment Portfolio with ETFs and Dividend Stocks",
@@ -68,6 +68,10 @@
     "Treating Tips": [
       "Natural Remedies for Seasonal Allergies: Effective Relief Without Medication",
       "Natural Remedies for Seasonal Allergies: Effective Relief Without Medication"
+    ],
+    "Market News": [
+      "The Psychology of Consumer Behavior: How Brands Influence Purchasing Decisions",
+      "Consumer Behavior Psychology: Brand Influence on Buying"
     ]
   }
 }

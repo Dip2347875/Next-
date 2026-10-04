@@ -1,5 +1,5 @@
 {
-  "next": 5,
+  "next": 6,
   "titles": {
     "Finance": [
       "How to Build a Recession-Proof Investment Portfolio with ETFs and Dividend Stocks",
@@ -33,7 +33,9 @@
     ],
     "Crime": [
       "The Evolution of Forensic Science: Solving Cold Cases with DNA Technology",
-      "Forensic Science Evolution: DNA Solves Cold Cases"
+      "Forensic Science Evolution: DNA Solves Cold Cases",
+      "The Evolution of Cybercrime: From Early Hacking to Modern Ransomware Attacks",
+      "Cybercrime Evolution: From Early Hacking to Ransomware"
     ],
     "Paranormal": [
       "The Role of Electronic Voice Phenomena (EVP) in Paranormal Investigations and Ghost Communication",

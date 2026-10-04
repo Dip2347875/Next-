@@ -1,5 +1,5 @@
 {
-  "next": 8,
+  "next": 9,
   "titles": {
     "Finance": [
       "How to Build a Recession-Proof Investment Portfolio with ETFs and Dividend Stocks",
@@ -51,7 +51,9 @@
     ],
     "Coding": [
       "Mastering Version Control with Git: A Comprehensive Guide for Developers",
-      "Master Git Version Control: Comprehensive Guide for Developers"
+      "Master Git Version Control: Comprehensive Guide for Developers",
+      "How to Optimize Code Performance: Best Practices for Efficient Programming in Python",
+      "Optimize Python Code Performance: Best Practices for Efficiency"
     ],
     "Question Solve": [
       "How to Effectively Manage and Reduce Chronic Stress Through Mindfulness and Lifestyle Changes",
